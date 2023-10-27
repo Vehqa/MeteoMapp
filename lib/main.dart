@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meteomapp_app/screens/loading_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Text('Hello world'),
+      theme: ThemeData.dark(),
+      home: LoadingScreen(),
     );
   }
 }
